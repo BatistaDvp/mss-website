@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Miami School of Soccer - Professional soccer training for all ages in Miami, FL">
+    <meta name="keywords" content="soccer, miami, training, youth soccer, kids soccer, soccer academy">
+    <title>Miami School of Soccer | Season 2025-26</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(220, 38, 38, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(220, 38, 38, 0.8); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #dc2626 0%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .shine {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .shine::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { left: -100%; }
+            50%, 100% { left: 100%; }
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(10px);
+            background-color: rgba(22, 101, 52, 0.95);
+        }
+
+        .logo-3d {
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 bg-gradient-to-r from-green-800 to-green-700 text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <img src="./images/mss-logo.png" alt="Miami School of Soccer Logo" class="w-16 h-16 object-contain">
+                    <div>
+                        <span class="font-bold text-xl block">Miami School of Soccer</span>
+                        <span class="text-xs text-yellow-300">Season 2025–26</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-yellow-400 transition font-medium">Home</a>
+                    <a href="#about" class="hover:text-yellow-400 transition font-medium">About</a>
+                    <a href="#programs" class="hover:text-yellow-400 transition font-medium">Programs</a>
+                    <a href="#testimonials" class="hover:text-yellow-400 transition font-medium">Reviews</a>
+                    <a href="#contact" class="hover:text-yellow-400 transition font-medium">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="#home" class="block py-2 hover:text-yellow-400 mobile-link">Home</a>
+                <a href="#about" class="block py-2 hover:text-yellow-400 mobile-link">About</a>
+                <a href="#programs" class="block py-2 hover:text-yellow-400 mobile-link">Programs</a>
+                <a href="#testimonials" class="block py-2 hover:text-yellow-400 mobile-link">Reviews</a>
+                <a href="#contact" class="block py-2 hover:text-yellow-400 mobile-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-red-700 via-red-800 to-red-900 text-white pt-32 pb-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-yellow-400 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-green-700 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <div class="mb-8 flex justify-center">
+                <img src="./images/mss-logo.png" alt="Miami School of Soccer Logo" class="w-80 h-80 object-contain logo-3d float-animation">
+            </div>
+            
+            <div class="animate-on-scroll visible">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Miami School <br>
+                    <span class="gradient-text">of Soccer</span>
+                </h1>
+                <p class="text-3xl md:text-4xl mb-4 text-yellow-400 font-bold shine">Build Skills. Love the Game.</p>
+                <p class="text-xl mb-10 text-red-100 flex items-center justify-center gap-2">
+                    <i class="fas fa-sparkles"></i>
+                    Season 2025–26 Now Open
+                    <i class="fas fa-sparkles"></i>
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#programs" class="bg-yellow-400 text-red-900 px-10 py-5 rounded-full text-lg font-bold hover:bg-yellow-300 transform hover:scale-105 transition shadow-2xl inline-flex items-center justify-center gap-2">
+                        Register Now <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="#about" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/20 transform hover:scale-105 transition shadow-xl">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="animate-on-scroll bg-white p-6 rounded-2xl shadow-lg text-center card-hover border-2 border-red-100">
+                    <i class="fas fa-users text-red-700 text-5xl mb-3"></i>
+                    <p class="text-4xl font-bold text-red-800 mb-1">500+</p>
+                    <p class="text-gray-600 font-medium">Active Players</p>
+                </div>
+                <div class="animate-on-scroll bg-white p-6 rounded-2xl shadow-lg text-center card-hover border-2 border-red-100">
+                    <i class="fas fa-award text-red-700 text-5xl mb-3"></i>
+                    <p class="text-4xl font-bold text-red-800 mb-1">15+</p>
+                    <p class="text-gray-600 font-medium">Years Experience</p>
+                </div>
+                <div class="animate-on-scroll bg-white p-6 rounded-2xl shadow-lg text-center card-hover border-2 border-red-100">
+                    <i class="fas fa-trophy text-red-700 text-5xl mb-3"></i>
+                    <p class="text-4xl font-bold text-red-800 mb-1">50+</p>
+                    <p class="text-gray-600 font-medium">Tournaments Won</p>
+                </div>
+                <div class="animate-on-scroll bg-white p-6 rounded-2xl shadow-lg text-center card-hover border-2 border-red-100">
+                    <i class="fas fa-star text-red-700 text-5xl mb-3"></i>
+                    <p class="text-4xl font-bold text-red-800 mb-1">4.9</p>
+                    <p class="text-gray-600 font-medium">Parent Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-5xl font-bold mb-4">
+                    <span class="text-green-800">Why Choose </span>
+                    <span class="gradient-text">Our Academy?</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Join Miami's premier soccer training program where passion meets excellence
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="animate-on-scroll bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-lg card-hover border-2 border-red-200">
+                    <div class="w-16 h-16 bg-red-700 rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-users text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-green-800">Expert Coaching</h3>
+                    <p class="text-gray-700 leading-relaxed">Professional UEFA and USSF certified coaches with years of experience developing young talent at all skill levels.</p>
+                </div>
+                
+                <div class="animate-on-scroll bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-2xl shadow-lg card-hover border-2 border-yellow-200">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-bullseye text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-green-800">Skill Development</h3>
+                    <p class="text-gray-700 leading-relaxed">Comprehensive training programs focused on technical excellence, tactical awareness, and competitive game situations.</p>
+                </div>
+                
+                <div class="animate-on-scroll bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg card-hover border-2 border-green-200">
+                    <div class="w-16 h-16 bg-green-700 rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-clock text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-green-800">Flexible Programs</h3>
+                    <p class="text-gray-700 leading-relaxed">Multiple training options and schedules designed to fit your family's busy lifestyle without compromising quality.</p>
+                </div>
+            </div>
+            
+            <div class="animate-on-scroll bg-gradient-to-r from-green-700 to-green-800 text-white p-12 rounded-3xl shadow-2xl">
+                <div class="max-w-3xl mx-auto text-center">
+                    <i class="fas fa-award text-yellow-400 text-6xl mb-6"></i>
+                    <h3 class="text-3xl font-bold mb-6">Our Commitment to Excellence</h3>
+                    <p class="text-lg leading-relaxed text-green-50">
+                        Miami School of Soccer is dedicated to providing world-class soccer education in a positive, 
+                        supportive environment. We welcome players of all ages and skill levels—from beginners 
+                        taking their first steps in the sport to competitive players looking to reach the next level. 
+                        Our programs emphasize technical mastery, tactical intelligence, teamwork, sportsmanship, 
+                        and a lifelong love of the beautiful game.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-5xl font-bold mb-4">
+                    <span class="text-green-800">Training </span>
+                    <span class="gradient-text">Programs</span>
+                </h2>
+                <p class="text-xl text-gray-600">Choose the perfect program for your young athlete</p>
+            </div>
+            
+            <!-- Oak Grove Park Program -->
+            <div class="mb-12 animate-on-scroll">
+                <div class="bg-gradient-to-br from-green-700 to-green-800 rounded-3xl p-10 shadow-2xl text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-yellow-400 rounded-full blur-3xl opacity-20"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="mb-8">
+                            <div class="inline-block bg-yellow-400 text-green-900 px-4 py-2 rounded-full text-sm font-bold mb-3">
+                                OAK GROVE PARK
+                            </div>
+                            <h3 class="text-4xl font-bold mb-2">Week Program</h3>
+                            <p class="text-green-100 text-lg mb-2">Tuesdays & Thursdays</p>
+                            <p class="text-yellow-300 text-lg font-semibold flex items-center gap-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                                690 NE 159th St, Miami, FL 33162
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-between mb-8 flex-wrap gap-4">
+                            <div class="text-5xl font-bold">$100<span class="text-2xl">/month</span></div>
+                            <div class="bg-yellow-400 text-green-900 px-6 py-3 rounded-full text-lg font-bold">
+                                $10 off each sibling
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/20 overflow-x-auto">
+                            <table class="w-full">
+                                <thead>
+                                    <tr class="border-b-2 border-white/30">
+                                        <th class="px-6 py-4 text-left text-lg font-bold">Age Group</th>
+                                        <th class="px-6 py-4 text-left text-lg font-bold">Training Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-white/20">
+                                    <tr class="hover:bg-white/5 transition">
+                                        <td class="px-6 py-5 font-semibold text-lg">4–5 years old</td>
+                                        <td class="px-6 py-5 text-green-100 text-lg">6:10 pm – 7:00 pm</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5 transition">
+                                        <td class="px-6 py-5 font-semibold text-lg">U8 / U9 / U10 / U11</td>
+                                        <td class="px-6 py-5 text-green-100 text-lg">6:10 pm – 7:10 pm</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5 transition">
+                                        <td class="px-6 py-5 font-semibold text-lg">U12 / U14 / U16</td>
+                                        <td class="px-6 py-5 text-green-100 text-lg">7:10 pm – 8:10 pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uleta Park Program -->
+            <div class="mb-12 animate-on-scroll">
+                <div class="bg-gradient-to-br from-red-700 to-red-800 rounded-3xl p-10 shadow-2xl text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-yellow-400 rounded-full blur-3xl opacity-20"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="mb-8">
+                            <div class="inline-block bg-yellow-400 text-red-900 px-4 py-2 rounded-full text-sm font-bold mb-3">
+                                ULETA PARK
+                            </div>
+                            <h3 class="text-4xl font-bold mb-2">Week Program</h3>
+                            <p class="text-red-100 text-lg mb-2">Mondays & Wednesdays</p>
+                            <p class="text-yellow-300 text-lg font-semibold flex items-center gap-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                                386 NE 169th St, North Miami Beach, FL 33162
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-between mb-8 flex-wrap gap-4">
+                            <div class="text-5xl font-bold">$100<span class="text-2xl">/month</span></div>
+                            <div class="bg-yellow-400 text-red-900 px-6 py-3 rounded-full text-lg font-bold">
+                                $10 off each sibling
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/20 overflow-x-auto">
+                            <table class="w-full">
+                                <thead>
+                                    <tr class="border-b-2 border-white/30">
+                                        <th class="px-6 py-4 text-left text-lg font-bold">Age Group</th>
+                                        <th class="px-6 py-4 text-left text-lg font-bold">Training Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-white/20">
+                                    <tr class="hover:bg-white/5 transition">
+                                        <td class="px-6 py-5 font-semibold text-lg">4–5 years old</td>
+                                        <td class="px-6 py-5 text-red-100 text-lg">6:15 pm – 7:00 pm</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5 transition">
+                                        <td class="px-6 py-5 font-semibold text-lg">6–10 years old</td>
+                                        <td class="px-6 py-5 text-red-100 text-lg">6:15 pm – 7:15 pm</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5 transition">
+                                        <td class="px-6 py-5 font-semibold text-lg">11–14 years old</td>
+                                        <td class="px-6 py-5 text-red-100 text-lg">7:15 pm – 8:15 pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saturday Program -->
+            <div class="animate-on-scroll">
+                <div class="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-10 shadow-2xl text-green-900 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-red-700 rounded-full blur-3xl opacity-20"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="mb-8">
+                            <div class="inline-block bg-green-800 text-white px-4 py-2 rounded-full text-sm font-bold mb-3">
+                                WEEKEND OPTION
+                            </div>
+                            <h3 class="text-4xl font-bold mb-2">Saturday Program</h3>
+                            <p class="text-green-800 text-lg">Perfect for busy weekday schedules</p>
+                        </div>
+
+                        <div class="flex items-center justify-between mb-8 flex-wrap gap-4">
+                            <div class="text-5xl font-bold">$50<span class="text-2xl">/month</span></div>
+                        </div>
+                        
+                        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/40 overflow-x-auto">
+                            <table class="w-full">
+                                <thead>
+                                    <tr class="border-b-2 border-green-800/30">
+                                        <th class="px-6 py-4 text-left text-lg font-bold">Age Group</th>
+                                        <th class="px-6 py-4 text-left text-lg font-bold">Training Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-green-800/20">
+                                    <tr class="hover:bg-white/10 transition">
+                                        <td class="px-6 py-5 font-semibold text-lg">4–5 years old</td>
+                                        <td class="px-6 py-5 text-green-800 text-lg">9:00 am – 9:45 am</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/10 transition">
+                                        <td class="px-6 py-5 font-semibold text-lg">6–12 years old</td>
+                                        <td class="px-6 py-5 text-green-800 text-lg">9:00 am – 10:00 am</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4 bg-gradient-to-b from-white to-red-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-5xl font-bold mb-4">
+                    <span class="text-green-800">What Parents </span>
+                    <span class="gradient-text">Are Saying</span>
+                </h2>
+                <p class="text-xl text-gray-600">Real feedback from our soccer family</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="animate-on-scroll bg-white p-8 rounded-2xl shadow-lg card-hover border-2 border-red-100">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">"My son has grown so much in confidence and skill. The coaches are amazing!"</p>
+                    <p class="font-bold text-green-800">– Maria Rodriguez</p>
+                </div>
+                <div class="animate-on-scroll bg-white p-8 rounded-2xl shadow-lg card-hover border-2 border-red-100">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">"Best soccer program in Miami. Professional, organized, and the kids love it."</p>
+                    <p class="font-bold text-green-800">– John Smith</p>
+                </div>
+                <div class="animate-on-scroll bg-white p-8 rounded-2xl shadow-lg card-hover border-2 border-red-100">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">"Great value for money. My daughter looks forward to every session!"</p>
+                    <p class="font-bold text-green-800">– Sarah Johnson</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-5xl font-bold mb-4">
+                    <span class="text-green-800">Get In </span>
+                    <span class="gradient-text">Touch</span>
+                </h2>
+                <p class="text-xl text-gray-600">Ready to start your soccer journey? Contact us today!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="animate-on-scroll bg-gradient-to-br from-red-50 to-white p-10 rounded-3xl shadow-xl border-2 border-red-100">
+                    <h3 class="text-3xl font-bold mb-8 text-green-800">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <a href="https://wa.me/17864933439" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 p-6 bg-gradient-to-r from-green-700 to-green-800 text-white rounded-2xl hover:from-green-800 hover:to-green-900 transition shadow-lg card-hover">
+                            <i class="fab fa-whatsapp text-4xl"></i>
+                            <div>
+                                <p class="font-bold text-xl">WhatsApp / Text</p>
+                                <p class="text-green-100 text-lg">(786) 493-3439</p>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-md border-2 border-gray-100">
+                            <i class="fas fa-phone text-red-700 text-3xl"></i>
+                            <div>
+                                <p class="font-bold text-xl text-gray-800">Phone</p>
+                                <a href="tel:+17864933439" class="text-red-700 hover:text-red-800 text-lg">(786) 493-3439</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-md border-2 border-gray-100">
+                            <i class="fas fa-map-marker-alt text-red-700 text-3xl"></i>
+                            <div>
+                                <p class="font-bold text-xl text-gray-800">Oak Grove Park</p>
+                                <p class="text-gray-600 text-lg">690 NE 159th St<br>Miami, FL 33162</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-md border-2 border-gray-100">
+                            <i class="fas fa-map-marker-alt text-red-700 text-3xl"></i>
+                            <div>
+                                <p class="font-bold text-xl text-gray-800">Uleta Park</p>
+                                <p class="text-gray-600 text-lg">386 NE 169th St<br>North Miami Beach, FL 33162</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="animate-on-scroll bg-white p-6 rounded-3xl shadow-xl border-2 border-red-100">
+                    <h3 class="text-3xl font-bold mb-6 text-green-800">Our Locations</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-bold mb-3 text-gray-800">Oak Grove Park</h4>
+                            <div class="w-full h-64 rounded-2xl overflow-hidden shadow-lg mb-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.863485793214!2d-80.19707492461624!3d25.920631177570706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9add6e474a7b1%3A0x7e84d39f8c01e1a8!2s690%20NE%20159th%20St%2C%20North%20Miami%20Beach%2C%20FL%2033162!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                                    width="100%"
+                                    height="100%"
+                                    style="border: 0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="Oak Grove Park Location"
+                                ></iframe>
+                            </div>
+                            <p class="text-gray-600">690 NE 159th St, Miami, FL 33162</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-bold mb-3 text-gray-800">Uleta Park</h4>
+                            <div class="w-full h-64 rounded-2xl overflow-hidden shadow-lg mb-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.9445089654473!2d-80.16733592461515!3d25.933824677558943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ac7b5e0d7a83%3A0x8c9d0f7f6e2e5c8a!2s386%20NE%20169th%20St%2C%20North%20Miami%20Beach%2C%20FL%2033162!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                                    width="100%"
+                                    height="100%"
+                                    style="border: 0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="Uleta Park Location"
+                                ></iframe>
+                            </div>
+                            <p class="text-gray-600">386 NE 169th St, North Miami Beach, FL 33162</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-green-800 to-green-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="./images/mss-logo.png" alt="Miami School of Soccer Logo" class="w-12 h-12 object-contain">
+                        <span class="font-bold text-xl">Miami School of Soccer</span>
+                    </div>
+                    <p class="text-green-200">Building champions on and off the field since 2010.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-yellow-400">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#programs" class="block hover:text-yellow-400 transition">Programs</a>
+                        <a href="#about" class="block hover:text-yellow-400 transition">About Us</a>
+                        <a href="#contact" class="block hover:text-yellow-400 transition">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-yellow-400">Contact Info</h4>
+                    <p class="text-green-200 mb-2">Oak Grove Park:</p>
+                    <p class="text-green-200 mb-3">690 NE 159th St, Miami, FL 33162</p>
+                    <p class="text-green-200 mb-2">Uleta Park:</p>
+                    <p class="text-green-200 mb-3">386 NE 169th St, North Miami Beach, FL 33162</p>
+                    <p class="text-green-200">(786) 493-3439</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-700 pt-8 text-center">
+                <p class="text-green-300">© 2025 Miami School of Soccer. All rights reserved.</p>
+                <p class="text-green-400 text-sm mt-2">Season 2025–26</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/17864933439" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 bg-green-600 text-white p-5 rounded-full shadow-2xl hover:bg-green-700 transform hover:scale-110 transition z-50 pulse-glow" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-blur', 'shadow-2xl');
+            } else {
+                navbar.classList.remove('nav-blur', 'shadow-2xl');
+            }
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animate-on-scroll elements
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
